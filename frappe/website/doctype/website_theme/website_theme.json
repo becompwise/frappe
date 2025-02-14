@@ -60,8 +60,7 @@
    "fieldname": "theme_scss",
    "fieldtype": "Code",
    "label": "Theme",
-   "options": "SCSS",
-   "read_only": 1
+   "options": "SCSS"
   },
   {
    "fieldname": "theme_url",
@@ -181,7 +180,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-10-25 22:15:53.601571",
+ "modified": "2025-02-04 17:32:22.551158",
  "modified_by": "Administrator",
  "module": "Website",
  "name": "Website Theme",
