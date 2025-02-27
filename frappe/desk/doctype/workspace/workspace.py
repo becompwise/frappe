@@ -35,7 +35,24 @@ class Workspace(Document):
 		custom_blocks: DF.Table[WorkspaceCustomBlock]
 		for_user: DF.Data | None
 		hide_custom: DF.Check
+<<<<<<< HEAD
 		indicator_color: DF.Literal["green", "cyan", "blue", "orange", "yellow", "gray", "grey", "red", "pink", "darkgrey", "purple", "light-blue"]
+=======
+		indicator_color: DF.Literal[
+			"green",
+			"cyan",
+			"blue",
+			"orange",
+			"yellow",
+			"gray",
+			"grey",
+			"red",
+			"pink",
+			"darkgrey",
+			"purple",
+			"light-blue",
+		]
+>>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 		is_hidden: DF.Check
 		label: DF.Data
 		links: DF.Table[WorkspaceLink]
@@ -49,6 +66,10 @@ class Workspace(Document):
 		sequence_id: DF.Float
 		shortcuts: DF.Table[WorkspaceShortcut]
 		title: DF.Data
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 	# end: auto-generated types
 	def validate(self):
 		self.title = strip_html(self.title)

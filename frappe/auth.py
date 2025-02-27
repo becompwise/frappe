@@ -40,12 +40,21 @@ class HTTPRequest:
 		# load cookies
 		self.set_cookies()
 
+<<<<<<< HEAD
 		# set request language
 		self.set_lang()
 
 		# login and start/resume user session
 		self.set_session()
 
+=======
+		# login and start/resume user session
+		self.set_session()
+
+		# set request language
+		self.set_lang()
+
+>>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 		# match csrf token from current session
 		self.validate_csrf_token()
 
@@ -147,12 +156,20 @@ class LoginManager:
 		frappe.form_dict.pop("pwd", None)
 		self.post_login()
 
+<<<<<<< HEAD
 	def post_login(self):
+=======
+	def post_login(self, session_end: str | None = None, audit_user: str | None = None):
+>>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 		self.run_trigger("on_login")
 		validate_ip_address(self.user)
 		self.validate_hour()
 		self.get_user_info()
+<<<<<<< HEAD
 		self.make_session()
+=======
+		self.make_session(session_end=session_end, audit_user=audit_user)
+>>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 		self.setup_boot_cache()
 		self.set_user_info()
 
@@ -208,10 +225,24 @@ class LoginManager:
 	def clear_preferred_language(self):
 		frappe.local.cookie_manager.delete_cookie("preferred_language")
 
+<<<<<<< HEAD
 	def make_session(self, resume=False):
 		# start session
 		frappe.local.session_obj = Session(
 			user=self.user, resume=resume, full_name=self.full_name, user_type=self.user_type
+=======
+	def make_session(
+		self, resume: bool = False, session_end: str | None = None, audit_user: str | None = None
+	):
+		# start session
+		frappe.local.session_obj = Session(
+			user=self.user,
+			resume=resume,
+			full_name=self.full_name,
+			user_type=self.user_type,
+			session_end=session_end,
+			audit_user=audit_user,
+>>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 		)
 
 		# reset user if changed to Guest
@@ -333,6 +364,7 @@ class LoginManager:
 		"""login as guest"""
 		self.login_as("Guest")
 
+<<<<<<< HEAD
 	def login_as(self, user):
 		self.user = user
 		self.post_login()
@@ -342,6 +374,18 @@ class LoginManager:
 		self.login_as(user)
 		# Flag this session as impersonated session, so other code can log this.
 		frappe.local.session_obj.set_impersonsated(current_user)
+=======
+	def login_as(self, user: str, session_end: str | None = None, audit_user: str | None = None):
+		self.user = user
+		self.post_login(session_end, audit_user)
+
+	def impersonate(self, user):
+		current_user = frappe.session.user
+		session_data = frappe.local.session_obj.data.data
+		self.login_as(user, session_end=session_data.session_end, audit_user=session_data.audit_user)
+		# Flag this session as impersonated session, so other code can log this.
+		frappe.local.session_obj.set_impersonated(current_user)
+>>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 
 	def logout(self, arg="", user=None):
 		if not user:

@@ -1154,8 +1154,21 @@ def publish_realtime(context, event, message, room, user, doctype, docname, afte
 @click.command("browse")
 @click.argument("site", required=False)
 @click.option("--user", required=False, help="Login as user")
+<<<<<<< HEAD
 @pass_context
 def browse(context, site, user=None):
+=======
+@click.option(
+	"--session-end",
+	required=False,
+	help="Session end (in ISO8601 format and timezone-aware - 2025-01-24T12:26:29.200853+00:00)",
+)
+@click.option("--user-for-audit", required=False, help="The user to mention in audit trail")
+@pass_context
+def browse(
+	context, site, user: str | None = None, session_end: str | None = None, user_for_audit: str | None = None
+):
+>>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 	"""Opens the site on web browser"""
 	from frappe.auth import CookieManager, LoginManager
 
@@ -1181,7 +1194,11 @@ def browse(context, site, user=None):
 			frappe.utils.set_request(path="/")
 			frappe.local.cookie_manager = CookieManager()
 			frappe.local.login_manager = LoginManager()
+<<<<<<< HEAD
 			frappe.local.login_manager.login_as(user)
+=======
+			frappe.local.login_manager.login_as(user, session_end, user_for_audit)
+>>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 			sid = f"/app?sid={frappe.session.sid}"
 		else:
 			click.echo("Please enable developer mode to login as a user")

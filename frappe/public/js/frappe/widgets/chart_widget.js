@@ -605,6 +605,7 @@ export default class ChartWidget extends Widget {
 			options = chart_options.options;
 		}
 
+<<<<<<< HEAD
 		chart_args.tooltipOptions = {
 			formatTooltipY: (value) =>
 				frappe.format(
@@ -613,6 +614,22 @@ export default class ChartWidget extends Widget {
 					{ always_show_decimals: true, inline: true }
 				),
 		};
+=======
+		if (this.chart_doc.currency) {
+			chart_args.tooltipOptions = {
+				formatTooltipY: (value) => format_currency(value, this.chart_doc.currency),
+			};
+		} else {
+			chart_args.tooltipOptions = {
+				formatTooltipY: (value) =>
+					frappe.format(
+						value,
+						{ fieldtype, options },
+						{ always_show_decimals: true, inline: true }
+					),
+			};
+		}
+>>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 
 		if (this.chart_doc.type == "Heatmap") {
 			const heatmap_year = parseInt(

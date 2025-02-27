@@ -60,7 +60,12 @@
    "fieldname": "theme_scss",
    "fieldtype": "Code",
    "label": "Theme",
+<<<<<<< HEAD
    "options": "SCSS"
+=======
+   "options": "SCSS",
+   "read_only": 1
+>>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
   },
   {
    "fieldname": "theme_url",
@@ -180,7 +185,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
+<<<<<<< HEAD
  "modified": "2025-02-04 17:32:22.551158",
+=======
+ "modified": "2022-10-25 22:15:53.601571",
+>>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
  "modified_by": "Administrator",
  "module": "Website",
  "name": "Website Theme",

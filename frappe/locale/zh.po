@@ -3,7 +3,11 @@ msgstr ""
 "Project-Id-Version: frappe\n"
 "Report-Msgid-Bugs-To: developers@frappe.io\n"
 "POT-Creation-Date: 2025-01-13 17:03+0000\n"
+<<<<<<< HEAD
 "PO-Revision-Date: 2025-01-18 01:24\n"
+=======
+"PO-Revision-Date: 2025-02-03 05:35\n"
+>>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 "Last-Translator: developers@frappe.io\n"
 "Language-Team: Chinese Simplified\n"
 "MIME-Version: 1.0\n"
@@ -760,7 +764,11 @@ msgstr ""
 #: frappe/website/doctype/about_us_settings/about_us_settings.json
 #: frappe/website/workspace/website/website.json
 msgid "About Us Settings"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "关于我们设置"
+>>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 
 #. Name of a DocType
 #: frappe/website/doctype/about_us_team_member/about_us_team_member.json
@@ -769,6 +777,7 @@ msgstr "关于我们 团队成员"
 
 #: frappe/core/doctype/data_import/data_import.js:27
 msgid "About {0} minute remaining"
+<<<<<<< HEAD
 msgstr ""
 
 #: frappe/core/doctype/data_import/data_import.js:28
@@ -778,6 +787,17 @@ msgstr ""
 #: frappe/core/doctype/data_import/data_import.js:25
 msgid "About {0} seconds remaining"
 msgstr ""
+=======
+msgstr "剩余约{0}分钟"
+
+#: frappe/core/doctype/data_import/data_import.js:28
+msgid "About {0} minutes remaining"
+msgstr "剩余约{0}分钟"
+
+#: frappe/core/doctype/data_import/data_import.js:25
+msgid "About {0} seconds remaining"
+msgstr "剩余约{0}秒"
+>>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 
 #. Label of a Section Break field in DocType 'Web Form'
 #: frappe/website/doctype/web_form/web_form.json

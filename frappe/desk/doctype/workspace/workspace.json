@@ -77,7 +77,12 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Module",
+<<<<<<< HEAD
    "options": "Module Def"
+=======
+   "options": "Module Def",
+   "read_only": 1
+>>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
   },
   {
    "fieldname": "column_break_3",
@@ -113,7 +118,12 @@
   {
    "fieldname": "icon",
    "fieldtype": "Icon",
+<<<<<<< HEAD
    "label": "Icon"
+=======
+   "label": "Icon",
+   "read_only": 1
+>>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
   },
   {
    "fieldname": "links",
@@ -128,18 +138,31 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Public",
+<<<<<<< HEAD
+=======
+   "read_only": 1,
+>>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
    "search_index": 1
   },
   {
    "fieldname": "title",
    "fieldtype": "Data",
    "label": "Title",
+<<<<<<< HEAD
+=======
+   "read_only": 1,
+>>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
    "reqd": 1
   },
   {
    "fieldname": "parent_page",
    "fieldtype": "Data",
+<<<<<<< HEAD
    "label": "Parent Page"
+=======
+   "label": "Parent Page",
+   "read_only": 1
+>>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
   },
   {
    "default": "[]",
@@ -212,8 +235,14 @@
    "options": "green\ncyan\nblue\norange\nyellow\ngray\ngrey\nred\npink\ndarkgrey\npurple\nlight-blue"
   }
  ],
+<<<<<<< HEAD
  "links": [],
  "modified": "2025-01-31 18:41:40.952665",
+=======
+ "in_create": 1,
+ "links": [],
+ "modified": "2024-05-30 17:30:36.791171",
+>>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
  "modified_by": "Administrator",
  "module": "Desk",
  "name": "Workspace",
@@ -249,4 +278,8 @@
  "sort_order": "DESC",
  "states": [],
  "track_changes": 1
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998

@@ -423,6 +423,7 @@ def validate_link(doctype: str, docname: str, fields=None):
 	if not isinstance(docname, str):
 		frappe.throw(_("Document Name must be a string"))
 
+<<<<<<< HEAD
 	if doctype != "DocType" and not (
 		frappe.has_permission(doctype, "select") or frappe.has_permission(doctype, "read")
 	):
@@ -430,6 +431,20 @@ def validate_link(doctype: str, docname: str, fields=None):
 			_("You do not have Read or Select Permissions for {}").format(frappe.bold(doctype)),
 			frappe.PermissionError,
 		)
+=======
+	if doctype != "DocType":
+		parent_doctype = None
+		if frappe.get_meta(doctype).istable:  # needed for links to child rows
+			parent_doctype = frappe.db.get_value(doctype, docname, "parenttype")
+		if not (
+			frappe.has_permission(doctype, "select", parent_doctype=parent_doctype)
+			or frappe.has_permission(doctype, "read", parent_doctype=parent_doctype)
+		):
+			frappe.throw(
+				_("You do not have Read or Select Permissions for {}").format(frappe.bold(doctype)),
+				frappe.PermissionError,
+			)
+>>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 
 	values = frappe._dict()
 

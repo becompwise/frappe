@@ -465,7 +465,11 @@ class MariaDBDatabase(MariaDBConnectionUtil, MariaDBExceptionUtil, Database):
 			tables = (
 				frappe.qb.from_(information_schema.tables)
 				.select(information_schema.tables.table_name)
+<<<<<<< HEAD
 				.where(information_schema.tables.table_schema != "information_schema")
+=======
+				.where(information_schema.tables.table_schema == frappe.db.cur_db_name)
+>>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 				.run(pluck=True)
 			)
 			frappe.cache.set_value("db_tables", tables)

@@ -119,11 +119,15 @@ frappe.ui.form.ControlAttach = class ControlAttach extends frappe.ui.form.Contro
 				`);
 			}
 		} else {
+<<<<<<< HEAD
 			// Don't allow attaching to child tables for new documents
 			if (this.doc?.__islocal && this.doc.parent) {
 				this.$input.prop("disabled", true);
 				this.$input.attr("title", __("Save to enable file upload"));
 			}
+=======
+			this.$input.toggle(true);
+>>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 			this.$value.toggle(false);
 		}
 	}

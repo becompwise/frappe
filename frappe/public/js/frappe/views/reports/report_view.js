@@ -703,7 +703,11 @@ frappe.views.ReportView = class ReportView extends frappe.views.ListView {
 	}
 
 	is_editable(df, data) {
+<<<<<<< HEAD
 		return (
+=======
+		if (
+>>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 			df &&
 			frappe.model.can_write(this.doctype) &&
 			// not a submitted doc or field is allowed to edit after submit
@@ -714,12 +718,25 @@ frappe.views.ReportView = class ReportView extends frappe.views.ListView {
 			!df.is_virtual &&
 			!df.hidden &&
 			// not a standard field i.e., owner, modified_by, etc.
+<<<<<<< HEAD
 			frappe.model.is_non_std_field(df.fieldname) &&
 			// don't check read_only_depends_on if there's child table fields
 			!this.meta.fields.some((df) => df.fieldtype === "Table") &&
 			df.read_only_depends_on &&
 			!this.evaluate_read_only_depends_on(df.read_only_depends_on, data)
 		);
+=======
+			frappe.model.is_non_std_field(df.fieldname)
+		) {
+			// don't check read_only_depends_on if there's child table fields
+			return (
+				this.meta.fields.some((df) => df.fieldtype === "Table") ||
+				(df.read_only_depends_on &&
+					!this.evaluate_read_only_depends_on(df.read_only_depends_on, data))
+			);
+		}
+		return false;
+>>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 	}
 
 	get_data(values) {

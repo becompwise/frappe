@@ -19,7 +19,13 @@ class WebsiteTheme(Document):
 
 	if TYPE_CHECKING:
 		from frappe.types import DF
+<<<<<<< HEAD
 		from frappe.website.doctype.website_theme_ignore_app.website_theme_ignore_app import WebsiteThemeIgnoreApp
+=======
+		from frappe.website.doctype.website_theme_ignore_app.website_theme_ignore_app import (
+			WebsiteThemeIgnoreApp,
+		)
+>>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 
 		background_color: DF.Link | None
 		button_gradients: DF.Check
@@ -41,6 +47,10 @@ class WebsiteTheme(Document):
 		theme: DF.Data
 		theme_scss: DF.Code | None
 		theme_url: DF.Data | None
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 	# end: auto-generated types
 	def validate(self):
 		self.validate_if_customizable()

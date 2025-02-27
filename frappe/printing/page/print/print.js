@@ -751,13 +751,21 @@ frappe.ui.form.PrintView = class {
 		if (
 			frappe.meta
 				.get_print_formats(this.frm.doctype)
+<<<<<<< HEAD
 				.includes(this.print_format_selector.val()) ||
 			!this.frm.meta.default_print_format
+=======
+				.includes(this.print_format_selector.val())
+>>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 		)
 			return;
 
 		this.print_format_selector.empty();
+<<<<<<< HEAD
 		this.print_format_selector.val(this.frm.meta.default_print_format);
+=======
+		this.print_format_selector.val(this.frm.meta.default_print_format || "");
+>>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 	}
 
 	selected_format() {
