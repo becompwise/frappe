@@ -51,11 +51,7 @@ from .utils.jinja import (
 )
 from .utils.lazy_loader import lazy_import
 
-<<<<<<< HEAD
-__version__ = "15.55.0"
-=======
 __version__ = "15.56.1"
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 __title__ = "Frappe Framework"
 
 # This if block is never executed when running the code. It is only used for
