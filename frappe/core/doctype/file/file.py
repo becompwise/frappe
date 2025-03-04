@@ -811,11 +811,8 @@ def has_permission(doc, ptype=None, user=None, debug=False):
 
 		try:
 			ref_doc = frappe.get_doc(attached_to_doctype, attached_to_name)
-<<<<<<< HEAD
-=======
 		except ModuleNotFoundError:
 			return False
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 		except frappe.DoesNotExistError:
 			frappe.clear_last_message()
 			return False

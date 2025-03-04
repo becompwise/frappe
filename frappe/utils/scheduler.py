@@ -40,11 +40,7 @@ def start_scheduler() -> NoReturn:
 	tick = get_scheduler_tick()
 	set_niceness()
 
-<<<<<<< HEAD
-	lock_path = os.path.abspath(os.path.join(get_bench_path(), "config", "scheduler_process"))
-=======
 	lock_path = _get_scheduler_lock_file()
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 
 	try:
 		lock = FileLock(lock_path)
@@ -58,8 +54,6 @@ def start_scheduler() -> NoReturn:
 		enqueue_events_for_all_sites()
 
 
-<<<<<<< HEAD
-=======
 def _get_scheduler_lock_file() -> True:
 	return os.path.abspath(os.path.join(get_bench_path(), "config", "scheduler_process"))
 
@@ -79,7 +73,6 @@ def is_schduler_process_running() -> bool:
 		return True
 
 
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 def enqueue_events_for_all_sites() -> None:
 	"""Loop through sites and enqueue events that are not already queued"""
 
