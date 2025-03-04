@@ -606,9 +606,6 @@ frappe.ui.filter_utils = {
 
 	get_timespan_options(periods) {
 		const period_map = {
-<<<<<<< HEAD
-			Last: ["7 Days", "14 Days", "30 Days", "Week", "Month", "Quarter", "6 months", "Year"],
-=======
 			Last: [
 				"7 Days",
 				"14 Days",
@@ -620,7 +617,6 @@ frappe.ui.filter_utils = {
 				"6 months",
 				"Year",
 			],
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 			This: ["Week", "Month", "Quarter", "Year"],
 			Next: ["7 Days", "14 Days", "30 Days", "Week", "Month", "Quarter", "6 months", "Year"],
 		};

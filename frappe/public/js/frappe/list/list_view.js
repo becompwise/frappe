@@ -25,17 +25,11 @@ frappe.views.ListView = class ListView extends frappe.views.BaseList {
 		super(opts);
 		this.show();
 		const meta = frappe.get_meta(this.doctype);
-<<<<<<< HEAD
-		this.debounced_refresh = frappe.utils.debounce(
-			this.process_document_refreshes.bind(this),
-			meta?.is_large_table ? 15000 : 2000
-=======
 		this.is_large_table = meta?.is_large_table;
 
 		this.debounced_refresh = frappe.utils.debounce(
 			this.process_document_refreshes.bind(this),
 			this.is_large_table ? 15000 : 2000
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 		);
 		this.count_upper_bound = 1001;
 		this._element_factory = new ElementFactory(this.doctype);
@@ -114,10 +108,7 @@ frappe.views.ListView = class ListView extends frappe.views.BaseList {
 				return f;
 			});
 		}
-<<<<<<< HEAD
-=======
 		this.add_recent_filter_on_large_tables();
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 
 		if (this.view_name == "List") this.toggle_paging = true;
 
@@ -125,8 +116,6 @@ frappe.views.ListView = class ListView extends frappe.views.BaseList {
 		return this.get_list_view_settings();
 	}
 
-<<<<<<< HEAD
-=======
 	add_recent_filter_on_large_tables() {
 		if (!this.is_large_table) {
 			return;
@@ -140,7 +129,6 @@ frappe.views.ListView = class ListView extends frappe.views.BaseList {
 		this.filters.push([this.doctype, recency_field, "Timespan", "last 90 days"]);
 	}
 
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 	on_sort_change(sort_by, sort_order) {
 		this.sort_by = sort_by;
 		this.sort_order = sort_order;

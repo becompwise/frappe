@@ -753,11 +753,7 @@ frappe.ui.Page = class Page {
 		}
 		let title_wrapper = this.$title_area.find(".title-text");
 		title_wrapper.html(title);
-<<<<<<< HEAD
-		title_wrapper.attr("title", tooltip_label || this.title);
-=======
 		title_wrapper.attr("title", __(tooltip_label) || this.title);
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 
 		if (tooltip_label) {
 			title_wrapper.tooltip({ delay: { show: 600, hide: 100 }, trigger: "hover" });
