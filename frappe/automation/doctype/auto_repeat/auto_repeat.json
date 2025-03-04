@@ -8,22 +8,13 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-<<<<<<< HEAD
-  "section_break_1",
-  "disabled",
-  "section_break_3",
-=======
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
   "reference_doctype",
   "reference_document",
   "submit_on_creation",
   "column_break_5",
   "start_date",
   "end_date",
-<<<<<<< HEAD
-=======
   "disabled",
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
   "section_break_10",
   "frequency",
   "repeat_on_day",
@@ -45,13 +36,6 @@
  ],
  "fields": [
   {
-<<<<<<< HEAD
-   "fieldname": "section_break_1",
-   "fieldtype": "Section Break"
-  },
-  {
-=======
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
    "fieldname": "reference_doctype",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -94,12 +78,8 @@
   },
   {
    "fieldname": "section_break_10",
-<<<<<<< HEAD
-   "fieldtype": "Section Break"
-=======
    "fieldtype": "Tab Break",
    "label": "Schedule"
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
   },
   {
    "fieldname": "frequency",
@@ -129,14 +109,8 @@
    "search_index": 1
   },
   {
-<<<<<<< HEAD
-   "collapsible": 1,
-   "fieldname": "notification",
-   "fieldtype": "Section Break",
-=======
    "fieldname": "notification",
    "fieldtype": "Tab Break",
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
    "label": "Notification"
   },
   {
@@ -201,13 +175,6 @@
    "read_only": 1
   },
   {
-<<<<<<< HEAD
-   "fieldname": "section_break_3",
-   "fieldtype": "Section Break"
-  },
-  {
-=======
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
    "default": "0",
    "depends_on": "eval:doc.frequency === 'Monthly'",
    "fieldname": "repeat_on_last_day",
@@ -234,18 +201,11 @@
   }
  ],
  "links": [],
-<<<<<<< HEAD
- "modified": "2021-01-12 09:24:49.719611",
- "modified_by": "Administrator",
- "module": "Automation",
- "name": "Auto Repeat",
-=======
  "modified": "2025-01-20 14:15:55.287788",
  "modified_by": "Administrator",
  "module": "Automation",
  "name": "Auto Repeat",
  "naming_rule": "Expression",
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
  "owner": "Administrator",
  "permissions": [
   {
@@ -290,8 +250,4 @@
  "sort_order": "DESC",
  "title_field": "reference_document",
  "track_changes": 1
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998

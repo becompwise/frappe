@@ -84,8 +84,6 @@ class TestResourceAPIV2(FrappeAPITestCase):
 		self.assertIsInstance(docname, str)
 		self.GENERATED_DOCUMENTS.append(docname)
 
-<<<<<<< HEAD
-=======
 	def test_copy_document(self):
 		doc = frappe.get_doc(self.DOCTYPE, self.GENERATED_DOCUMENTS[0])
 
@@ -105,7 +103,6 @@ class TestResourceAPIV2(FrappeAPITestCase):
 		self.assertNotIn("owner", data)
 		self.assertNotIn("docstatus", data)
 
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 	def test_delete_document(self):
 		doc_to_delete = choice(self.GENERATED_DOCUMENTS)
 		response = self.delete(self.resource(self.DOCTYPE, doc_to_delete))

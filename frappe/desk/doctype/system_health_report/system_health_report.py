@@ -31,11 +31,7 @@ from frappe.model.document import Document
 from frappe.utils.background_jobs import get_queue, get_queue_list, get_redis_conn
 from frappe.utils.caching import redis_cache
 from frappe.utils.data import add_to_date
-<<<<<<< HEAD
-from frappe.utils.scheduler import get_scheduler_status, get_scheduler_tick
-=======
 from frappe.utils.scheduler import get_scheduler_status, get_scheduler_tick, is_schduler_process_running
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 
 
 @contextmanager
@@ -193,12 +189,8 @@ class SystemHealthReport(Document):
 		lower_threshold = add_to_date(None, days=-7, as_datetime=True)
 		# Exclude "maybe" curently executing job
 		upper_threshold = add_to_date(None, minutes=-30, as_datetime=True)
-<<<<<<< HEAD
-		self.scheduler_status = get_scheduler_status().get("status")
-=======
 		scheduler_running = get_scheduler_status().get("status") == "active" and is_schduler_process_running()
 		self.scheduler_status = "Active" if scheduler_running else "Inactive"
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 		failing_jobs = frappe.db.sql(
 			"""
 			select scheduled_job_type,

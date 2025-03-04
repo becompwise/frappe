@@ -3,11 +3,7 @@ msgstr ""
 "Project-Id-Version: frappe\n"
 "Report-Msgid-Bugs-To: developers@frappe.io\n"
 "POT-Creation-Date: 2025-01-13 17:03+0000\n"
-<<<<<<< HEAD
-"PO-Revision-Date: 2025-01-27 02:48\n"
-=======
 "PO-Revision-Date: 2025-02-04 05:51\n"
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 "Last-Translator: developers@frappe.io\n"
 "Language-Team: Persian\n"
 "MIME-Version: 1.0\n"
@@ -9785,11 +9781,7 @@ msgstr "فیلد {0} یافت نشد."
 #: frappe/public/js/frappe/form/grid_row.js:430
 #: frappe/website/doctype/web_template_field/web_template_field.json
 msgid "Fieldname"
-<<<<<<< HEAD
-msgstr "Fieldname"
-=======
 msgstr "نام فیلد"
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 
 #: frappe/core/doctype/doctype/doctype.py:267
 msgid "Fieldname '{0}' conflicting with a {1} of the name {2} in {3}"
@@ -9878,11 +9870,7 @@ msgstr "فیلدهایی که با کاما (،) از هم جدا شده اند 
 #: frappe/website/doctype/web_form_list_column/web_form_list_column.json
 #: frappe/website/doctype/web_template_field/web_template_field.json
 msgid "Fieldtype"
-<<<<<<< HEAD
-msgstr "Fieldtype"
-=======
 msgstr "نوع فیلد"
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 
 #: frappe/custom/doctype/custom_field/custom_field.py:192
 msgid "Fieldtype cannot be changed from {0} to {1}"
@@ -18240,11 +18228,7 @@ msgstr "دوره زمانی"
 #: frappe/core/doctype/docfield/docfield.json
 #: frappe/custom/doctype/customize_form_field/customize_form_field.json
 msgid "Perm Level"
-<<<<<<< HEAD
-msgstr "سطح پرم"
-=======
 msgstr "سطح مجوز"
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 
 #. Option for the 'Address Type' (Select) field in DocType 'Address'
 #: frappe/contacts/doctype/address/address.json
@@ -25039,11 +25023,7 @@ msgstr "عکس گرفتن"
 #: frappe/website/doctype/portal_menu_item/portal_menu_item.json
 #: frappe/website/doctype/website_route_redirect/website_route_redirect.json
 msgid "Target"
-<<<<<<< HEAD
-msgstr "هدف"
-=======
 msgstr "مقدار هدف‌گذاری"
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 
 #: frappe/desk/doctype/todo/todo_calendar.js:19
 #: frappe/desk/doctype/todo/todo_calendar.js:25
@@ -27860,11 +27840,7 @@ msgstr "URL ویدیو"
 #. Label of a Select field in DocType 'Form Tour'
 #: frappe/desk/doctype/form_tour/form_tour.json
 msgid "View"
-<<<<<<< HEAD
-msgstr "چشم انداز"
-=======
 msgstr "نما"
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 
 #: frappe/core/doctype/success_action/success_action.js:60
 #: frappe/public/js/frappe/form/success_action.js:89

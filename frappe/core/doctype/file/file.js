@@ -1,13 +1,10 @@
 frappe.ui.form.on("File", {
 	refresh: function (frm) {
-<<<<<<< HEAD
-=======
 		frm.add_custom_button(__("View File"), () => {
 			if (!frappe.utils.is_url(frm.doc.file_url)) {
 				window.open(window.location.origin + frm.doc.file_url);
 			}
 		});
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 		if (!frm.doc.is_folder) {
 			// add download button
 			frm.add_custom_button(__("Download"), () => frm.trigger("download"), "fa fa-download");

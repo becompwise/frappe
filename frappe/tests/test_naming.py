@@ -100,12 +100,7 @@ class TestNaming(FrappeTestCase):
 		doc.some_fieldname = description
 		doc.insert()
 
-<<<<<<< HEAD
-		series = getseries(f"TODO-{now_datetime().strftime('%m')}-{description}-", 2)
-
-=======
 		series = getseries("", 2)
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 		series = int(series) - 1
 
 		self.assertEqual(doc.name, f"TODO-{now_datetime().strftime('%m')}-{description}-{series:02}")
@@ -119,11 +114,7 @@ class TestNaming(FrappeTestCase):
 			doc.field = field
 			doc.insert()
 
-<<<<<<< HEAD
-			series = getseries(f"TODO-{field}-", 2)
-=======
 			series = getseries("", 2)
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 			series = int(series) - 1
 
 			self.assertEqual(doc.name, f"TODO-{field}-{series:02}")
@@ -144,23 +135,15 @@ class TestNaming(FrappeTestCase):
 		todo.description = description
 		todo.insert()
 
-<<<<<<< HEAD
-		week = determine_consecutive_week_number(now_datetime())
-		series = getseries(f"TODO-{week}-", 2)
-=======
 		series = getseries("", 2)
 
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 		series = str(int(series) - 1)
 
 		if len(series) < 2:
 			series = "0" + series
 
-<<<<<<< HEAD
-=======
 		week = determine_consecutive_week_number(now_datetime())
 
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 		self.assertEqual(todo.name, f"TODO-{week}-{series}")
 
 	def test_revert_series(self):

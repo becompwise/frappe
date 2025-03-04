@@ -534,10 +534,7 @@ def get_custom_report_list(module):
 			else 0,
 			"label": _(r.name),
 			"link_to": r.name,
-<<<<<<< HEAD
-=======
 			"report_ref_doctype": r.ref_doctype,
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 		}
 		for r in reports
 	]

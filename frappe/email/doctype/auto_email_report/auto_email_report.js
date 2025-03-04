@@ -101,11 +101,7 @@ frappe.ui.form.on("Auto Email Report", {
 			);
 
 			var filters = {};
-<<<<<<< HEAD
-
-=======
 			var dialog;
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 			let report_filters;
 
 			if (
@@ -140,8 +136,6 @@ frappe.ui.form.on("Auto Email Report", {
 			$.each(report_filters, function (key, val) {
 				// Remove break fieldtype from the filters
 				if (val.fieldtype != "Break") {
-<<<<<<< HEAD
-=======
 					if (val.fieldtype === "MultiSelectList") {
 						val.get_data = (txt) => {
 							if (!dialog || !val.options) return [];
@@ -158,7 +152,6 @@ frappe.ui.form.on("Auto Email Report", {
 								: [];
 						};
 					}
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 					report_filters_list.push(val);
 				}
 			});
@@ -179,11 +172,7 @@ frappe.ui.form.on("Auto Email Report", {
 			});
 
 			table.on("click", function () {
-<<<<<<< HEAD
-				var dialog = new frappe.ui.Dialog({
-=======
 				dialog = new frappe.ui.Dialog({
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 					fields: report_filters,
 					primary_action: function () {
 						var values = this.get_values();
