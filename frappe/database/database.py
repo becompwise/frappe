@@ -48,11 +48,7 @@ INDEX_PATTERN = re.compile(r"\s*\([^)]+\)\s*")
 SINGLE_WORD_PATTERN = re.compile(r'([`"]?)(tab([A-Z]\w+))\1')
 MULTI_WORD_PATTERN = re.compile(r'([`"])(tab([A-Z]\w+)( [A-Z]\w+)+)\1')
 
-<<<<<<< HEAD
-SQL_ITERATOR_BATCH_SIZE = 100
-=======
 SQL_ITERATOR_BATCH_SIZE = 1000
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 
 
 class Database:

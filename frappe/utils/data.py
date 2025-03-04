@@ -740,22 +740,6 @@ def get_timespan_date_range(timespan: str) -> tuple[datetime.datetime, datetime.
 
 	match timespan:
 		case "last 7 days":
-<<<<<<< HEAD
-			return (
-				add_to_date(today, days=-7),
-				today,
-			)
-		case "last 14 days":
-			return (
-				add_to_date(today, days=-14),
-				today,
-			)
-		case "last 30 days":
-			return (
-				add_to_date(today, days=-30),
-				today,
-			)
-=======
 			return (add_to_date(today, days=-7), today)
 		case "last 14 days":
 			return (add_to_date(today, days=-14), today)
@@ -763,7 +747,6 @@ def get_timespan_date_range(timespan: str) -> tuple[datetime.datetime, datetime.
 			return (add_to_date(today, days=-30), today)
 		case "last 90 days":
 			return (add_to_date(today, days=-90), today)
->>>>>>> 8b0de1000b6568d6c2bea8a3566b5441a9831998
 		case "last week":
 			return (
 				get_first_day_of_week(add_to_date(today, days=-7)),
