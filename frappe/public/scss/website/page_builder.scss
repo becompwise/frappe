@@ -89,41 +89,41 @@
 	width: 100%;
 }
 
-.section-padding {
-	padding-top: 3rem;
-	padding-bottom: 3rem;
+// .section-padding {
+// 	padding-top: 3rem;
+// 	padding-bottom: 3rem;
 
-	@include media-breakpoint-up(sm) {
-		padding-top: 5rem;
-		padding-bottom: 5rem;
-	}
-	@include media-breakpoint-up(xl) {
-		padding-top: 8rem;
-		padding-bottom: 8rem;
-	}
-}
+// 	@include media-breakpoint-up(sm) {
+// 		padding-top: 5rem;
+// 		padding-bottom: 5rem;
+// 	}
+// 	@include media-breakpoint-up(xl) {
+// 		padding-top: 8rem;
+// 		padding-bottom: 8rem;
+// 	}
+// }
 
-.section-padding-top {
-	padding-top: 3rem;
+// .section-padding-top {
+// 	padding-top: 3rem;
 
-	@include media-breakpoint-up(sm) {
-		padding-top: 5rem;
-	}
-	@include media-breakpoint-up(xl) {
-		padding-top: 8rem;
-	}
-}
+// 	@include media-breakpoint-up(sm) {
+// 		padding-top: 5rem;
+// 	}
+// 	@include media-breakpoint-up(xl) {
+// 		padding-top: 8rem;
+// 	}
+// }
 
-.section-padding-bottom {
-	padding-bottom: 3rem;
+// .section-padding-bottom {
+// 	padding-bottom: 3rem;
 
-	@include media-breakpoint-up(sm) {
-		padding-bottom: 5rem;
-	}
-	@include media-breakpoint-up(xl) {
-		padding-bottom: 8rem;
-	}
-}
+// 	@include media-breakpoint-up(sm) {
+// 		padding-bottom: 5rem;
+// 	}
+// 	@include media-breakpoint-up(xl) {
+// 		padding-bottom: 8rem;
+// 	}
+// }
 
 .section[data-section-template="Hero with Right Image"] {
 	overflow-x: hidden;
