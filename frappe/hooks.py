@@ -17,7 +17,7 @@ after_install = "frappe.utils.install.after_install"
 
 page_js = {"setup-wizard": "public/js/frappe/setup_wizard.js"}
 
-# website
+# website 
 app_include_js = [
 	"libs.bundle.js",
 	"desk.bundle.js",
